@@ -17,7 +17,7 @@ export default class Database {
     findone(id) {
         const result = this.table.find(t => t.id === id);
         
-        if (!result.length) return false;
+        if (!result) return false;
 
         return result
     }
